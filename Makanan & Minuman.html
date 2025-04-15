@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Makanan & Minuman.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=NamaFont:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="Foto/icon/icon.ico" type="image/x-icon">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>UMKM Makanan dan Minuman</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="back-home">← Beranda</a>
+    </header>
+    <section class="container">
+        <div class="slider-wrapper" id="slider">
+            <img src="Foto/Makanan & Minuman/1.jpg" alt="Nasi Bebek">
+            <img src="Foto/Makanan & Minuman/2.jpg" alt="Nasi Bento">
+            <img src="Foto/Nasi Kotak/UMKM 3.png" alt="Nasi Campur">
+        </div>
+
+        <div class="button">
+            <span class="prev" onclick="prevSlide()">&#10094;</span>
+            <span class="next" onclick="nextSlide()">&#10095;</span>
+        </div>
+
+        <div class="slider-nav">
+            <span onclick="goToSlide(0)"></span>
+            <span onclick="goToSlide(1)"></span>
+            <span onclick="goToSlide(2)"></span>
+        </div>
+    </section>
+
+    <section>
+        <div class="judul2">
+            <h3>Produk UMKM Makanan & Minuman</h3>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchBox" class="search-box" placeholder="Cari produk UMKM...">
+        </div>
+    </section>
+
+    <main>
+
+        <div class="boxnasikotak" id="product-list">
+
+            <div class="item">
+              <div class="box2">
+                <a href="seblakd34.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <img src="Foto/Makanan & Minuman/Seblak Malang D34/Seblak beranda.jpg" alt="">
+                </a>
+              </div>
+              <div class="boxdes">
+                <a href="seblakd34.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <h1>Seblak Malang D34</h1>
+                </a>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="box2">
+                <a href="mendoanagus.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <img src="Foto/Makanan & Minuman/Tempe Medoan Sam Agus/1.jpg" alt="">
+                </a>
+              </div>
+              <div class="boxdes">
+                <a href="mendoanagus.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <h1>Tempe Mendoan <br>Sam Suga</h1>
+                </a>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="box2">
+                <a href="buburayamgandrung.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <img src="Foto/Makanan & Minuman/Bubur Ayam Gandrung/1.jpg" alt="">
+                </a>
+              </div>
+              <div class="boxdes">
+                <a href="buburayamgandrung.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <h1>Bubur Ayam gandrung</h1>
+                </a>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="box2">
+                <a href="Bandeng Presto Bu Titik.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <img src="Foto/Makanan & Minuman/Bandeng Presto Bu Titik/Beranda.jpg" alt="">
+                </a>
+              </div>
+              <div class="boxdes">
+                <a href="Bandeng Presto Bu Titik.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <h1>Bandeng Presto Bu Titik</h1>
+                </a>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="box2">
+                <a href="Bakso 37.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <img src="Foto/Makanan & Minuman/Bakso 37/Beranda.jpg" alt="">
+                </a>
+              </div>
+              <div class="boxdes">
+                <a href="Bakso 37.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <h1>Bakso 37</h1>
+                </a>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="box2">
+                <a href="Bakmi Keriting.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <img src="Foto/Makanan & Minuman/Bakmie Keriting 97/profil.jpeg" alt="">
+                </a>
+              </div>
+              <div class="boxdes">
+                <a href="Bakmi Keriting.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <h1>Bakmie keriting 97</h1>
+                </a>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="box2">
+                <a href="Mie Kepo.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <img src="Foto/Makanan & Minuman/Mie Kepo/1.jpg" alt="">
+                </a>
+              </div>
+              <div class="boxdes">
+                <a href="Mie Kepo.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <h1>Mie Kepoo</h1>
+                </a>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="box2">
+                <a href="Dapur Rumah Chilla.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <img src="Foto/Makanan & Minuman/Dapur Rumah Chillia/1.jpg" alt="">
+                </a>
+              </div>
+              <div class="boxdes">
+                <a href="Dapur Rumah Chilla.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <h1>Dapur Rumah Chilla</h1>
+                </a>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="box2">
+                <a href="Kedai Bu Nila.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <img src="Foto/Makanan & Minuman/Kedai Bu Nila/1.jpg" alt="">
+                </a>
+              </div>
+              <div class="boxdes">
+                <a href="Kedai Bu Nila.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <h1>Kedai Bu Nila</h1>
+                </a>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="box2">
+                <a href="Nasi Goreng Jendral.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <img src="Foto/Makanan & Minuman/Nasi Goreng Jendral/1.jpg" alt="">
+                </a>
+              </div>
+              <div class="boxdes">
+                <a href="Nasi Goreng Jendral.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <h1>Nasi Goreng Jendral</h1>
+                </a>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="box2">
+                <a href="Koto Minang Raya.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <img src="Foto/Makanan & Minuman/Padang Minang Raya/Profil.jpg" alt="">
+                </a>
+              </div>
+              <div class="boxdes">
+                <a href="Koto Minang Raya.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <h1>Padang Minang Raya</h1>
+                </a>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="box2">
+                <a href="Dapur Yuli Hajar.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <img src="Foto/Makanan & Minuman/Dapur Yuli Hajar/2.jpg" alt="">
+                </a>
+              </div>
+              <div class="boxdes">
+                <a href="Dapur Yuli Hajar.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <h1>Dapur Yuli Hajar</h1>
+                </a>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="box2">
+                <a href="siomay batagor Kebonsari.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <img src="Foto/Makanan & Minuman/Siomay dan Batagor Kebonsari/1.jpg" alt="">
+                </a>
+              </div>
+              <div class="boxdes">
+                <a href="siomay batagor Kebonsari.html" onclick="setLastCategory('Makanan & Minuman.html')">
+                  <h1>siomay batagor kebonsari</h1>
+                </a>
+              </div>
+            </div>
+          
+          </div>
+          
+
+    <div class="fab-container">
+        <div class="fab-menu" id="fabMenu">
+            <div class="menufab">
+                <a href="https://wa.me/6281230110217" target="_blank" class="fab-item">
+                    <img src="Foto/icon/whatsapp hijau.png" alt="WA" class="fab-logo">
+                    <p>Admin 1 - Bu Emiliah</p>
+                </a>
+            </div>
+    
+            <div class="menufab">
+                <a href="https://wa.me/6281252548695" target="_blank" class="fab-item">
+                    <img src="Foto/icon/whatsapp hijau.png" alt="WA" class="fab-logo">
+                    <p>Admin 2 - Bu Rika</p> 
+                </a>
+            </div>
+    
+            <div class="menufab">
+                <a href="https://wa.me/6282331257449" target="_blank" class="fab-item">
+                    <img src="Foto/icon/whatsapp hijau.png" alt="WA" class="fab-logo">
+                    <p>Admin 3 - Bu Indrayani</p>
+                </a>
+            </div>
+            
+
+            <div class="menufab">
+                <button class="fab-item" id="openMap">
+                    <img src="Foto/icon/maps.png" alt="Map" class="fab-logo">
+                    <p>Map</p>
+                </button>
+            </div>
+            
+            <!-- Modal untuk Google Maps -->
+            <div id="mapContainer" class="map-overlay">
+                <div class="map-content">
+                    <iframe 
+                        id="mapFrame"
+                        src=""
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                    <button class="close-map" id="closeMap">✖</button>
+                </div>
+            </div>
+            
+        </div>
+    
+        <div class="fab-button" onclick="toggleMenu()">
+            <img src="Foto/icon/whatsapp.png" alt="WhatsApp" class="fab-icon">
+        </div>
+    </div>
+
+    <script>
+        // Cek apakah halaman sebelumnya adalah produk
+        if (
+          document.referrer.includes(".html") &&
+          document.referrer !== location.href &&
+          !document.referrer.includes("index.html") &&
+          !document.referrer.includes("Makanan & Minuman.html")
+        ) {
+          // Tandai agar nanti balik ke index
+          sessionStorage.setItem("backToIndexNext", "true");
+        }
+        
+        window.onload = () => {
+          if (sessionStorage.getItem("backToIndexNext") === "true") {
+            sessionStorage.removeItem("backToIndexNext");
+            // Replace URL agar back tidak balik ke produk lagi
+            history.replaceState(null, "", "index.html");
+          }
+        };
+    </script>
+    
+    
+    
+</body>
+    
+<script>
+    function setLastCategory(name) {
+      sessionStorage.setItem("lastCategory", name);
+    }
+</script>
+
+
+
+
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("fabMenu");
+        if (menu.style.display === "flex") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "flex";
+        }
+    }
+</script>
+<script src="fabmap.js"></script>
+<script src="slidenasikotak.js"></script>
+<script src="search.js"></script>

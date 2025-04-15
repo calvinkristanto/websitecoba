@@ -1,0 +1,104 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background-color: #483322;
+
+}
+
+/* Container and Slider */
+.container {
+    position: relative;
+    width: 90%; /* Responsif untuk berbagai perangkat */
+    max-width: 500px; /* Batas maksimal lebar slider */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-wrapper img {
+    width: 100%;
+    object-fit: cover; /* Menjaga gambar tetap proporsional */
+    border: none;
+}
+
+/* Navigation Buttons */
+.button {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none; /* Agar hanya tombol yang dapat diklik */
+}
+
+.button span {
+    pointer-events: auto;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+/* Slider Navigation Dots */
+.slider-nav {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.slider-nav span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.slider-nav span:hover,
+.slider-nav span.active {
+    background: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .button span {
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+
+    .slider-nav span {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%; /* Gunakan seluruh lebar layar */
+        border-radius: 0; /* Tidak ada radius pada perangkat kecil */
+    }
+
+    .button span {
+        font-size: 1.2rem;
+        padding: 6px;
+    }
+}

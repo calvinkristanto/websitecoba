@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMKM Bandungrejosari Malang</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="shortcut icon" href="Foto/icon/icon.ico" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="Navtop">
+                <ul id="menuList">
+                    <li><a class="active" href="#">Beranda</a></li>
+                    <li><a href="lokasibandungrejosari.html">Tentang</a></li>
+
+                </ul>
+                <span class="material-symbols-outlined" onclick="togglemenu()">
+                    menu
+                </span>
+        </div>
+    </nav>
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if (menuList.style.maxHeight =="0px")
+            {
+                menuList.style.maxHeight = "700px";
+            }
+            else{
+                menuList.style.maxHeight ="0px";
+            }
+            
+        }
+    </script>
+    <section class="beranda">
+        <h1 style="color: #366e54;">UMKM Malang</h1>
+        <h1 style="color: #17242D;">Bandungrejosari</h1>
+        <p>Produk UMKM Bandungrejosari ada disini</p>
+    </section>
+
+    <main>
+
+        <div class="title">
+            <h1>Produk UMKM</h1>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <a href="Makanan & Minuman.html">
+                    <img src="Foto/Makanan.jpg" alt="Deskripsi Makanan">
+                    <div class="judul">
+                        <h1>Makanan & Minuman</h1>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box1">
+                <a href="Nasi Kotak.html">
+                    <img src="Foto/Nasi Kotak.jpg" alt="Nasi Kotak">
+                    <div class="judul">
+                        <h1>Nasi Kotak</h1>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box1">
+                <a href="kue.html">
+                    <img src="Foto/Kue.jpg" alt="Kue">
+                    <div class="judul">
+                        <h1>Kue</h1>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="box1">
+                <img src="Foto/Kerajinan Tangan.jpg" alt="Kerajinan Tangan">
+                <div class="judul">
+                    <h1>Kerajinan Tangan</h1>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+<script>slider</script>
+
