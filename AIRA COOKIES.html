@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aira Cookies</title>
+    <link rel="stylesheet" href="allforkue.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="Foto/icon/icon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <body>
+    <header>
+        <a href="kue.html" class="back-link">← Kembali</a>
+    </header>
+    <div class="content-container">
+    
+        
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="Foto/Kue/Aira Cookies/1.jpg" alt="Kue Ayummy">
+                </div>
+                <div class="slide">
+                    <img src="Foto/Kue/Aira Cookies/2.jpg" alt="kue Ayummy">
+                </div>
+                <div class="slide">
+                    <img src="Foto/Kue/Aira Cookies/3.jpg" alt="kue Ayummy">
+                </div>
+                <div class="slide">
+                    <img src="Foto/Kue/Aira Cookies/4.jpg" alt="kue Ayummy">
+                </div>
+                <div class="slide">
+                    <img src="Foto/Kue/Aira Cookies/5.jpg" alt="kue Ayummy">
+                </div>
+            </div>
+            <div class="slider-buttons">
+                <button class="slider-btn prev">❮</button>
+                <button class="slider-btn next">❯</button>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <div class="hours">
+                <span class="icons">
+                    <span class="material-symbols-outlined">calendar_today</span>
+                    <p>Hari: Khusus (jika ada pesanan)</p>
+                </span>
+                <span class="icons">
+                    <span class="material-symbols-outlined">schedule</span>
+                    <p>Jam:Khusus (jika ada pesanan) </p>
+                </span>
+            </div>
+
+            <p class="description">
+                Aira Cookies adalah penyedia aneka kue lezat yang cocok untuk berbagai acara spesial maupun camilan sehari-hari. Kami menghadirkan berbagai pilihan kue berkualitas seperti
+            </p>
+
+
+            <ul>
+                <br><li><b>Kastengel</b> : Gurih dan renyah dengan taburan keju yang melimpah.</li></br>
+                <br><li><b>Putri Salju</b> : Lembut, manis, dan lumer di mulut dengan taburan gula halus.</li></br>
+                <br><li><b>Nastar</b> : Kue klasik berisi selai nanas homemade yang manis dan segar.</li></br>
+                <br><li><b>Kue Kacang</b> : Tekstur renyah dengan aroma kacang yang menggoda.</li></br>
+                <br><li><b>Tahu Petis</b> : Tahu goreng renyah dengan isian petis khas yang gurih dan nikmat.</li></br>
+            </ul>
+            
+
+        </div>
+    </div>
+</body>
+
+<div class="fab-container">
+    <div class="fab-button" onclick="toggleMenu()">
+        <img src="Foto/icon/whatsapp.png" alt="WhatsApp" class="fab-icon">
+    </div>
+    <div class="fab-menu" id="fabMenu">
+        <a href="https://wa.me/6281230110217" target="_blank" class="fab-item">
+            <img src="Foto/icon/whatsapp hijau.png" alt="WA" class="fab-logo">
+            <p>Admin 1 - Bu Emiliah</p>
+        </a>
+        <a href="https://wa.me/6281252548695" target="_blank" class="fab-item">
+            <img src="Foto/icon/whatsapp hijau.png" alt="WA" class="fab-logo">
+            <p>Admin 2 - Bu Rika</p> 
+        </a>
+        <a href="https://wa.me/6282331257449" target="_blank" class="fab-item">
+            <img src="Foto/icon/whatsapp hijau.png" alt="WA" class="fab-logo">
+            <p>Admin 3 - Bu Indrayani</p>
+        </a>
+    </div>
+</div>
+
+<script>
+     function toggleMenu() {
+    var menu = document.getElementById("fabMenu");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+</script>
+
+<script src="NK bebek.js"></script>
+</html>
+
+<style>
+   ul li {
+    font-family: Arial, sans-serif;
+    font-size: 17px; 
+}
+
+</style>
+
+<script>
+    if (window.performance && window.performance.navigation.type === 1) {
+      // Jika user nge-refresh atau buka langsung halaman produk
+      history.replaceState(null, null, "kue.html");
+    }
+  </script>
+  

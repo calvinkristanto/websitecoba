@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kue.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=NamaFont:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="Foto/icon/icon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>UMKM Kue</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="back-home">← Beranda</a>
+    </header>
+    <section class="container">
+        <div class="slider-wrapper" id="slider">
+            <img src="Foto/Makanan & Minuman/1.jpg" alt="Nasi Bebek">
+            <img src="Foto/Makanan & Minuman/2.jpg" alt="Nasi Bento">
+            <img src="Foto/Nasi Kotak/UMKM 3.png" alt="Nasi Campur">
+        </div>
+
+        <div class="button">
+            <span class="prev" onclick="prevSlide()">&#10094;</span>
+            <span class="next" onclick="nextSlide()">&#10095;</span>
+        </div>
+
+        <div class="slider-nav">
+            <span onclick="goToSlide(0)"></span>
+            <span onclick="goToSlide(1)"></span>
+            <span onclick="goToSlide(2)"></span>
+        </div>
+    </section>
+
+    <section>
+        <div class="judul2">
+            <h3>Produk UMKM Kue</h3>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchBox" class="search-box" placeholder="Cari produk UMKM...">
+        </div>
+    </section>
+
+    <main>
+
+        <div class="boxnasikotak" id="product-list">
+            <div class="item">
+                <div class="box2">
+                    <a href="Ayummy Kuker.html">
+                        <img src="Foto/Kue/Ayummy Kuker/beranda.jpg" alt="Ayummy Kuker">
+                    </a>
+                </div>
+                <div class="boxdes">
+                    <a href="Ayummy Kuker.html">
+                        <h1>Ayummy Kuker</h1>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="box2">
+                    <a href="AIRA COOKIES.html">
+                        <img src="Foto/Kue/Aira Cookies/beranda.jpg" alt="Ayummy Kuker">
+                    </a>
+                </div>
+                <div class="boxdes">
+                    <a href="AIRA COOKIES.html">
+                        <h1>Aira Cookies</h1>
+                    </a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="box2">
+                    <a href="AIRA COOKIES.html">
+                        <img src="Foto/Kue/Aira Cookies/beranda.jpg" alt="Ayummy Kuker">
+                    </a>
+                </div>
+                <div class="boxdes">
+                    <a href="AIRA COOKIES.html">
+                        <h1>Aira Cookies</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+        
+    <div class="fab-container">
+        <div class="fab-button" onclick="toggleMenu()">
+            <img src="Foto/icon/whatsapp.png" alt="WhatsApp" class="fab-icon">
+        </div>
+        <div class="fab-menu" id="fabMenu">
+            <a href="https://wa.me/6281230110217" target="_blank" class="fab-item">
+                <img src="Foto/icon/whatsapp hijau.png" alt="WA" class="fab-logo">
+                <p>Admin 1 - Bu Emiliah</p>
+            </a>
+            <a href="https://wa.me/6281252548695" target="_blank" class="fab-item">
+                <img src="Foto/icon/whatsapp hijau.png" alt="WA" class="fab-logo">
+                <p>Admin 2 - Bu Rika</p> 
+            </a>
+            <a href="https://wa.me/6282331257449" target="_blank" class="fab-item">
+                <img src="Foto/icon/whatsapp hijau.png" alt="WA" class="fab-logo">
+                <p>Admin 3 - Bu Indrayani</p>
+            </a>
+        </div>
+    </div>
+
+    <script>
+         function toggleMenu() {
+        var menu = document.getElementById("fabMenu");
+        menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+    </script>
+    
+    <script>
+        // Cek apakah datang dari index.html (atau belum disimpan sebelumnya)
+        if (!sessionStorage.getItem('fromIndex')) {
+          // Simpan flag agar tidak pushState berkali-kali
+          sessionStorage.setItem('fromIndex', 'true');
+      
+          // Tambahkan entry palsu ke history agar back pertama tetap ke index.html
+          history.pushState(null, null, location.href);
+        }
+      
+        // Deteksi back kedua dari kue.html → index.html
+        window.addEventListener('popstate', function () {
+          // Hapus flag
+          sessionStorage.removeItem('fromIndex');
+          // Redirect ke index.html saat user back dari kue.html
+          window.location.href = "index.html";
+        });
+    </script>
+      
+</body>
+
+<script src="slidenasikotak.js"></script>
+<script src="search.js"></script>

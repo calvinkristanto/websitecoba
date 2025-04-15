@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakso 37</title>
+    <link rel="stylesheet" href="allformakanan.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="Foto/icon/icon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<body>
+    <header>
+        <a href="javascript:void(0)" onclick="goBack()" class="back-link">← Kembali</a>
+    </header>
+    <div class="content-container">
+    
+        
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="Foto/Makanan & Minuman/Bakso 37/1.jpg" alt="Nasi Kotak Bebek 1">
+                </div>
+                <div class="slide">
+                    <img src="Foto/Makanan & Minuman/Bakso 37/2.jpg" alt="Nasi Kotak Bebek 2">
+                </div>
+                <div class="slide">
+                    <img src="Foto/Makanan & Minuman/Bakso 37/3.jpg" alt="Nasi Kotak Bebek 3">
+                </div>
+            </div>
+            <div class="slider-buttons">
+                <button class="slider-btn prev">❮</button>
+                <button class="slider-btn next">❯</button>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <div class="hours">
+                <span class="icons">
+                    <span class="material-symbols-outlined">calendar_today</span>
+                    <p>Hari:Senin-Minggu</p>
+                </span>
+                <span class="icons">
+                    <span class="material-symbols-outlined">schedule</span>
+                    <p>Jam:11.00-Habis</p>
+                </span>
+            </div>
+
+            <p class="description">
+                Bakso 37 – Bakso kenyal dengan cita rasa gurih khas, dibuat dari daging pilihan dan bumbu spesial. Disajikan dengan kuah kaldu yang kaya rasa, cocok dinikmati kapan saja!  
+            </p>
+        </div>
+    </div>
+
+    <div class="fab-container">
+        <div class="fab-button" onclick="toggleMenu()">
+            <img src="Foto/icon/whatsapp.png" alt="WhatsApp" class="fab-icon">
+        </div>
+        <div class="fab-menu" id="fabMenu">
+            <a href="https://wa.me/6281230110217" target="_blank" class="fab-item">
+                <img src="Foto/icon/whatsapp hijau.png" alt="WA" class="fab-logo">
+                <p>Admin 1 - Bu Emiliah</p>
+            </a>
+            <a href="https://wa.me/6281252548695" target="_blank" class="fab-item">
+                <img src="Foto/icon/whatsapp hijau.png" alt="WA" class="fab-logo">
+                <p>Admin 2 - Bu Rika</p> 
+            </a>
+            <a href="https://wa.me/6282331257449" target="_blank" class="fab-item">
+                <img src="Foto/icon/whatsapp hijau.png" alt="WA" class="fab-logo">
+                <p>Admin 3 - Bu Indrayani</p>
+            </a>
+        </div>
+    </div>
+    
+    <script>
+         function toggleMenu() {
+        var menu = document.getElementById("fabMenu");
+        menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+    </script>
+
+    <script>
+        // Saat produk dibuka, kita simpan halaman sebelumnya
+        window.onload = () => {
+        if (document.referrer.includes("Makanan & Minuman.html")) {
+            sessionStorage.setItem("lastCategory", "Makanan & Minuman.html");
+        }
+        };
+    
+        // Fungsi tombol kembali
+        function goBack() {
+        const backTo = sessionStorage.getItem("lastCategory") || "index.html";
+        location.replace(backTo); // balik tanpa menambah history
+        }
+    </script>
+</body>
+<script src="NK bebek.js"></script>
+</html>

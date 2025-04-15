@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakmi Keriting 97</title>
+    <link rel="stylesheet" href="allformakanan.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="Foto/icon/icon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<body>
+    <header>
+        <a href="Makanan & Minuman.html" class="back-link">← Kembali</a>
+    </header>
+    <div class="content-container">
+    
+        
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <figure>
+                        <img src="Foto/Makanan & Minuman/Bakmie Keriting 97/1.jpg" alt="Bakmi Keriting">
+                        <figcaption>Bakmi Keriting Charsiu</figcaption>
+                    </figure>
+                </div>
+                <div class="slide">
+                    <figure>
+                        <img src="Foto/Makanan & Minuman/Bakmie Keriting 97/2.jpg" alt="Charsiu">
+                        <figcaption>Bakmie Keriting Spesial</figcaption>
+                    </figure>
+                </div>
+                <div class="slide">
+                    <figure>
+                        <img src="Foto/Makanan & Minuman/Bakmie Keriting 97/3.jpg" alt="Bakmi Bulat">
+                        <figcaption>Bakmi Bulat</figcaption>
+                    </figure>
+                </div>
+                <div class="slide">
+                    <figure>
+                        <img src="Foto/Makanan & Minuman/Bakmie Keriting 97/4.jpg" alt="Bakmi Campur">
+                        <figcaption>Bakmi Original</figcaption>
+                    </figure>
+                </div>
+            </div>
+            
+            <div class="slider-buttons">
+                <button class="slider-btn prev">❮</button>
+                <button class="slider-btn next">❯</button>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <div class="hours">
+                <span class="icons">
+                    <span class="material-symbols-outlined">calendar_today</span>
+                    <p>Hari:Senin-Minggu</p>
+                </span>
+                <span class="icons">
+                    <span class="material-symbols-outlined">schedule</span>
+                    <p>Jam:10.00-19.00</p>
+                </span>
+            </div>
+
+            <p class="description">
+                Bakmi Keriting 97 menyajikan cita rasa autentik dengan tekstur mie yang kenyal dan bumbu khas yang menggugah selera. Kami menghadirkan tiga pilihan favorit:
+
+                <br>Bakmi Keriting – Mie keriting khas dengan topping ayam berbumbu, gurih dan lezat.</br>
+
+                <br> Charsiu – Mie dengan potongan daging charsiu merah yang manis dan gurih.</br>
+
+                <br>Bakmi Bulat – Mie bulat dengan tekstur halus dan rasa klasik yang memanjakan lidah.</br>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="fab-container">
+        <div class="fab-menu" id="fabMenu">
+            <div class="menufab">
+                <a href="https://wa.me/6281230110217" target="_blank" class="fab-item">
+                    <img src="Foto/icon/whatsapp hijau.png" alt="WA" class="fab-logo">
+                    <p>Admin 1 - Bu Emiliah</p>
+                </a>
+            </div>
+    
+            <div class="menufab">
+                <a href="https://wa.me/6281252548695" target="_blank" class="fab-item">
+                    <img src="Foto/icon/whatsapp hijau.png" alt="WA" class="fab-logo">
+                    <p>Admin 2 - Bu Rika</p> 
+                </a>
+            </div>
+    
+            <div class="menufab">
+                <a href="https://wa.me/6282331257449" target="_blank" class="fab-item">
+                    <img src="Foto/icon/whatsapp hijau.png" alt="WA" class="fab-logo">
+                    <p>Admin 3 - Bu Indrayani</p>
+                </a>
+            </div>
+            
+
+            <div class="menufab">
+                <button class="fab-item" id="openMap">
+                    <img src="Foto/icon/maps.png" alt="Map" class="fab-logo">
+                    <p>Map</p>
+                </button>
+            </div>
+            
+            <!-- Modal untuk Google Maps -->
+            <div id="mapContainer" class="map-overlay">
+                <div class="map-content">
+                    <iframe 
+                        id="mapFrame"
+                        src=""
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                    <button class="close-map" id="closeMap">✖</button>
+                </div>
+            </div>
+            
+        </div>
+    
+        <div class="fab-button" onclick="toggleMenu()">
+            <img src="Foto/icon/whatsapp.png" alt="WhatsApp" class="fab-icon">
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("fabMenu");
+        if (menu.style.display === "flex") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "flex";
+        }
+    }
+</script>
+<script src="NK bebek.js"></script>
+<script src="fabmap.js"></script>
+</body>
+<script src="NK bebek.js"></script>
+</html>

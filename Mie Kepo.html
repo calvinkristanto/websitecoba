@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mie Kepoo</title>
+    <link rel="stylesheet" href="allformakanan.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="Foto/icon/icon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<body>
+    <header>
+        <a href="Makanan & Minuman.html" class="back-link">← Kembali</a>
+    </header>
+    <div class="content-container">
+    
+        
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <figure>
+                        <img src="Foto/Makanan & Minuman/Mie Kepo/1.jpg" alt="Bakmi Keriting">
+                        <figcaption>Mie Kepo Original</figcaption>
+                    </figure>
+                </div>
+                <div class="slide">
+                    <figure>
+                        <img src="Foto/Makanan & Minuman/Mie Kepo/2.jpg" alt="Charsiu">
+                        <figcaption>Pangsit Mie Kepo Pedas Lvl 1,2,3</figcaption>
+                    </figure>
+                </div>
+                <div class="slide">
+                    <figure>
+                        <img src="Foto/Makanan & Minuman/Mie Kepo/3.jpg" alt="Bakmi Bulat">
+                        <figcaption>Siomay Goreng</figcaption>
+                    </figure>
+                </div>
+                <div class="slide">
+                    <figure>
+                        <img src="Foto/Makanan & Minuman/Mie Kepo/4.jpg" alt="Bakmi Campur">
+                        <figcaption>Bubur Ayam</figcaption>
+                    </figure>
+                </div>
+                <div class="slide">
+                  <figure>
+                      <img src="Foto/Makanan & Minuman/Mie Kepo/5.jpg" alt="Bakmi Campur">
+                      <figcaption>Bihun</figcaption>
+                  </figure>
+              </div>
+              <div class="slide">
+                <figure>
+                    <img src="Foto/Makanan & Minuman/Mie Kepo/6.jpg" alt="Bakmi Campur">
+                    <figcaption>Boba</figcaption>
+                </figure>
+            </div>
+            </div>
+            
+            <div class="slider-buttons">
+                <button class="slider-btn prev">❮</button>
+                <button class="slider-btn next">❯</button>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <div class="hours">
+                <span class="icons">
+                    <span class="material-symbols-outlined">calendar_today</span>
+                    <p>Hari:Senin-Jumat</p>
+                </span>
+                <span class="icons">
+                    <span class="material-symbols-outlined">schedule</span>
+                    <p>Jam:06.00 - 20.30</p>
+                </span>
+            </div>
+
+            <p class="description">
+                Nikmati sensasi unik dari Mie Kepo, mie kenyal dengan cita rasa khas yang dipadukan dengan topping spesial seperti ayam suwir, pangsit goreng renyah, dan sayuran segar. Lengkap dengan semangkuk bubur ayam gurih bertabur cakwe, daun bawang, bawang goreng, dan suwiran ayam lembut, cocok banget buat kamu yang doyan kenyang maksimal!
+                Sebagai pelengkap, segelas boba milk tea dingin siap menyegarkan harimu dengan sensasi chewy boba dan rasa manis yang pas.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="fab-container">
+        <div class="fab-menu" id="fabMenu">
+            <div class="menufab">
+                <a href="https://wa.me/6281230110217" target="_blank" class="fab-item">
+                    <img src="Foto/icon/whatsapp hijau.png" alt="WA" class="fab-logo">
+                    <p>Admin 1 - Bu Emiliah</p>
+                </a>
+            </div>
+    
+            <div class="menufab">
+                <a href="https://wa.me/6281252548695" target="_blank" class="fab-item">
+                    <img src="Foto/icon/whatsapp hijau.png" alt="WA" class="fab-logo">
+                    <p>Admin 2 - Bu Rika</p> 
+                </a>
+            </div>
+    
+            <div class="menufab">
+                <a href="https://wa.me/6282331257449" target="_blank" class="fab-item">
+                    <img src="Foto/icon/whatsapp hijau.png" alt="WA" class="fab-logo">
+                    <p>Admin 3 - Bu Indrayani</p>
+                </a>
+            </div>
+            
+
+            <div class="menufab">
+                <button class="fab-item" id="openMap">
+                    <img src="Foto/icon/maps.png" alt="Map" class="fab-logo">
+                    <p>Map</p>
+                </button>
+            </div>
+            
+            <!-- Modal untuk Google Maps -->
+            <div id="mapContainer" class="map-overlay">
+                <div class="map-content">
+                    <iframe 
+                        id="mapFrame"
+                        src=""
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                    <button class="close-map" id="closeMap">✖</button>
+                </div>
+            </div>
+            
+        </div>
+    
+        <div class="fab-button" onclick="toggleMenu()">
+            <img src="Foto/icon/whatsapp.png" alt="WhatsApp" class="fab-icon">
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("fabMenu");
+        if (menu.style.display === "flex") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "flex";
+        }
+    }
+</script>
+<script src="NK bebek.js"></script>
+<script src="fabmap.js"></script>
+</body>
+<script src="NK bebek.js"></script>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempe Mendoan Sam Agus</title>
+    <link rel="stylesheet" href="allformakanan.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="Foto/icon/icon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<body>
+    <header>
+        <a href="Makanan & Minuman.html" class="back-link">← Kembali</a>
+    </header>
+    <div class="content-container">
+    
+        
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="Foto/Makanan & Minuman/Tempe Medoan Sam Agus/slide 1.jpg" alt="Nasi Kotak Bebek 1">
+                </div>
+                <div class="slide">
+                    <img src="Foto/Makanan & Minuman/Tempe Medoan Sam Agus/slide 2.jpg" alt="Nasi Kotak Bebek 2">
+                </div>
+                <div class="slide">
+                    <img src="Foto/Makanan & Minuman/Tempe Medoan Sam Agus/slide 3.jpg" alt="Nasi Kotak Bebek 3">
+                </div>
+            </div>
+            <div class="slider-buttons">
+                <button class="slider-btn prev">❮</button>
+                <button class="slider-btn next">❯</button>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <div class="hours">
+                <span class="icons">
+                    <span class="material-symbols-outlined">calendar_today</span>
+                    <p>Hari: Senin - Jumat</p>
+                </span>
+                <span class="icons">
+                    <span class="material-symbols-outlined">schedule</span>
+                    <p>Jam: 09.00 - 15.00</p>
+                </span>
+            </div>
+
+            <p class="description">
+                <br>Tempe Mendoan Sam Agus adalah camilan khas Indonesia yang terkenal dengan teksturnya yang renyah di luar dan lembut di dalam.</br> 
+                <br>Varian Biasa:Tempe mendoan gurih dengan tepung berbumbu khas, renyah di luar, lembut di dalam.</br>
+                <br>Varian Pedas :Varian dengan adonan cabai, memberikan sensasi pedas yang menggugah selera.</br>
+    
+                
+
+            </p>
+        </div>
+    </div>
+
+    <div class="fab-container">
+        <div class="fab-menu" id="fabMenu">
+            <div class="menufab">
+                <a href="https://wa.me/6281230110217" target="_blank" class="fab-item">
+                    <img src="Foto/icon/whatsapp hijau.png" alt="WA" class="fab-logo">
+                    <p>Admin 1 - Bu Emiliah</p>
+                </a>
+            </div>
+    
+            <div class="menufab">
+                <a href="https://wa.me/6281252548695" target="_blank" class="fab-item">
+                    <img src="Foto/icon/whatsapp hijau.png" alt="WA" class="fab-logo">
+                    <p>Admin 2 - Bu Rika</p> 
+                </a>
+            </div>
+    
+            <div class="menufab">
+                <a href="https://wa.me/6282331257449" target="_blank" class="fab-item">
+                    <img src="Foto/icon/whatsapp hijau.png" alt="WA" class="fab-logo">
+                    <p>Admin 3 - Bu Indrayani</p>
+                </a>
+            </div>
+            
+
+            <div class="menufab">
+                <button class="fab-item" id="openMap">
+                    <img src="Foto/icon/maps.png" alt="Map" class="fab-logo">
+                    <p>Map</p>
+                </button>
+            </div>
+            
+            <!-- Modal untuk Google Maps -->
+            <div id="mapContainer" class="map-overlay">
+                <div class="map-content">
+                    <iframe 
+                        id="mapFrame"
+                        src=""
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                    <button class="close-map" id="closeMap">✖</button>
+                </div>
+            </div>
+            
+        </div>
+    
+        <div class="fab-button" onclick="toggleMenu()">
+            <img src="Foto/icon/whatsapp.png" alt="WhatsApp" class="fab-icon">
+        </div>
+    </div>
+
+    <script>
+        function goBackToCategory() {
+          const lastCategory = sessionStorage.getItem("lastCategory");
+          if (lastCategory) {
+            window.location.href = lastCategory;
+          } else {
+            window.location.href = "index.html"; // fallback jika data tidak ada
+          }
+        }
+    </script>
+    
+</body>
+</html>
+
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("fabMenu");
+        if (menu.style.display === "flex") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "flex";
+        }
+    }
+</script>
+<script src="NK bebek.js"></script>
+<script src="fabmap.js"></script>
