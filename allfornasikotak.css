@@ -5,6 +5,8 @@
     font-family: 'Inter', sans-serif;
 }
 
+
+
 body {
     min-height: 100vh;
     padding: 16px;
@@ -307,4 +309,5 @@ body {
         transform: translateY(0);
     }
 }
+
 
