@@ -5,6 +5,25 @@
     box-sizing: border-box;
 }
 
+
+.navbar {
+    background-color: #001f3f; /* biru navy */
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: "Playfair Display", serif;
+
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        font-size: 15px;
+    }
+
+}
 body {
    background-color: #483322;
 }
